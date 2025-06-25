@@ -35,6 +35,56 @@ const page2 = () => {
           </div>
         </div>
       </div>
+
+      <div className='text-scroll w-full h-24 bg-[#c9f31d]'>
+        <ul className='text-black flex w-full h-full text-5xl justify-between items-center gap-5'>
+          <li className='h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]'><i class="fa-brands fa-html5"></i><p>HTML</p></li>
+          <li className='h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]'><i class="fa-brands fa-css3-alt"></i><p>CSS</p></li>
+          <li className='h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]'><i class="fa-brands fa-react"></i><p>REACT</p></li>
+          <li className='h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]'><i class="fa-solid fa-leaf"></i><p>MONGODB</p></li>
+          <li className='h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]'><i class="fa-brands fa-js"></i><p>JAVASCRIPT</p></li>
+          <li className='h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]'><i class="fa-brands fa-flutter"></i><p>FLUTTER</p></li>
+        </ul>
+      </div>
+
+      <div className='w-full text-white bg-[#1d1d1d] p-18 pb-30 list-none list flex-col flex gap-8'>
+        <li className='w-full flex justify-between items-center'>
+          <h1 className='text-4xl'>My Certifications</h1>
+          <p className='text-[#c9f31d]'>View My Work</p>
+        </li>
+        <hr className='text-gray-600' />
+        <div className='list w-full flex flex-col gap-8'>
+          <ul className='w-full flex justify-between text-[20px]'>
+            <li>Site Of The Day</li>
+            <li>Css & Animation</li>
+            <li>2018</li>
+          </ul>
+          <hr className='text-gray-600' />
+          <ul className='w-full flex justify-between text-[20px]'>
+            <li>Site Of The Day</li>
+            <li>Css & Animation</li>
+            <li>2018</li>
+          </ul>
+          <hr className='text-gray-600' />
+          <ul className='w-full flex justify-between text-[20px]'>
+            <li>Site Of The Day</li>
+            <li>Css & Animation</li>
+            <li>2018</li>
+          </ul>
+          <hr className='text-gray-600' />
+          <ul className='w-full flex justify-between text-[20px]'>
+            <li>Site Of The Day</li>
+            <li>Css & Animation</li>
+            <li>2018</li>
+          </ul>
+          <hr className='text-gray-600' />
+          <ul className='w-full flex justify-between text-[20px]'>
+            <li>Site Of The Day</li>
+            <li>Css & Animation</li>
+            <li>2018</li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }
