@@ -6,6 +6,7 @@ import Homepage from './sections/Homepage';
 import Page2 from './sections/page2';
 import Page3 from './sections/Page3';
 import Page4 from './sections/Page4';
+import Page5 from './sections/Page5';
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
@@ -16,7 +17,9 @@ const App = () => {
       console.log(dets.x,dets.y)
       gsap.to(".cursor",{
         x:dets.x,
-        y:dets.y
+        y:dets.y,
+        duration:1,
+        ease:"power2"
       });
     })
   },[])
@@ -30,6 +33,7 @@ const App = () => {
       <Page2/>
       <Page3/>
       <Page4/>
+      <Page5/>
     </div>
   )
 }
