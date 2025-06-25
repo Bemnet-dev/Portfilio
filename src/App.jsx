@@ -5,6 +5,7 @@ import Navbar from './sections/Navbar';
 import Homepage from './sections/Homepage';
 import Page2 from './sections/page2';
 import Page3 from './sections/Page3';
+import Page4 from './sections/Page4';
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
       <Homepage/>
       <Page2/>
       <Page3/>
+      <Page4/>
     </div>
   )
 }
