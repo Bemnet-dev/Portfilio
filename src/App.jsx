@@ -10,32 +10,45 @@ import Page5 from "./sections/Page5";
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
-  useEffect(() => {
+  useEffect(() =>{
     const cursor = document.querySelector(".maincontain");
-    cursor.addEventListener("mousemove", (dets) => {
-      console.log(dets.x, dets.y);
+    const sidebtn = document.querySelector('.sidebutton');
+    const cross = document.querySelector('.cross');
+    const moveHandler = (dets) => {
       gsap.to(".cursor", {
         x: dets.x,
         y: dets.y,
         duration: 1,
         ease: "power2",
       });
-    });
+    };
 
-    const btn = document.querySelector('.sidebarbtn');
-    btn.addEventListener('click',() =>{
+    const mouseEnter = () =>{
       gsap.to(".sidebar1",{
         transform:"translateX(0%)",
-        duration:0.4,
+        duration:0.7,
+        ease:"none",
       })
-    })
-  }, []);
+    }
+
+    const mouseRemove = () =>{
+      gsap.to(".sidebar1",{
+        transform:"translateX(100%)",
+        duration:0.7,
+        ease:"none",
+      })
+    }
+    cursor.addEventListener('mousemove',moveHandler);
+    sidebtn.addEventListener('click',mouseEnter);
+    cross.addEventListener('click',mouseRemove);
+  },[])
+
   return (
     <div className="text-white bg-pink-200 maincontain cursor-default">
       <div className="cursor w-8 h-8 border-2 border-[#c9f31d] rounded-full absolute z-20"></div>
-      <div className="sidebar w-75 h-screen z-50 bg-black absolute right-0 top-0 text-white p-5 sidebar1">
+      <div className="w-[300px] h-screen z-50 bg-black absolute right-0 top-0 text-white p-5 sidebar1">
         <div className="w-full h-23 p-5 flex justify-end">
-          <i className="fa-solid fa-xmark text-black pt-3.5 pl-3.5 pr-3.5 cursor-pointer text-2xl flex justify-center items-center bg-[#c9f31d] rounded-[4px]"></i>
+          <i className="fa-solid fa-xmark cross text-black pt-3.5 pl-3.5 pr-3.5 cursor-pointer text-2xl flex justify-center items-center bg-[#c9f31d] rounded-[4px]"></i>
         </div>
         <div className="flex border-t-0 border-b-0 border-l-0 max-[1122px]:border-r-0 max-[1122px]:flex-1/2 border-gray-700 text-3xl">
           <i className="fa-solid fa-shield-halved text-[#c9f31d]"></i>

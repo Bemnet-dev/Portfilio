@@ -18,19 +18,19 @@ const Page5 = () => {
             <h1 className='text-3xl underline max-sm:text-2xl'>Sagameperso@gmail.com</h1>
         </div>
         <div className="w-[50%] pl-20 flex  flex-wrap gap-14 items-center justify-between max-sm:flex-col max-sm:p-5 max-sm:w-full pr-20">
-            <span className='w-60 max-sm:w-full flex items-center justify-between bg-[#121212] border-[#272727] border p-5 rounded-[8px] max-sm:items-center max-sm:justify-between'>
+            <span className='w-60 hover:bg-[#c9f31d] hover:text-black duration-200 cursor-pointer max-sm:w-full flex items-center justify-between bg-[#121212] border-[#272727] border p-5 rounded-[8px] max-sm:items-center max-sm:justify-between'>
                 <p>Facebook</p>
                 <i className="fa-solid fa-arrow-right"></i>
             </span>
-            <span className='w-60 max-sm:w-full flex items-center justify-between bg-[#121212] p-5 border-[#272727] border rounded-[8px] max-sm:items-center max-sm:justify-between'>
+            <span className='w-60 hover:bg-[#c9f31d] hover:text-black duration-200 cursor-pointer max-sm:w-full flex items-center justify-between bg-[#121212] p-5 border-[#272727] border rounded-[8px] max-sm:items-center max-sm:justify-between'>
                 <p>Instagram</p>
                 <i className="fa-solid fa-arrow-right"></i>
             </span>
-            <span className='w-60 max-sm:w-full flex items-center justify-between bg-[#121212] border border-[#272727] p-5 rounded-[8px] max-sm:items-center max-sm:justify-between'>
+            <span className='w-60 hover:bg-[#c9f31d] hover:text-black duration-200 cursor-pointer max-sm:w-full flex items-center justify-between bg-[#121212] border border-[#272727] p-5 rounded-[8px] max-sm:items-center max-sm:justify-between'>
                 <p>Linkedin</p>
                 <i className="fa-solid fa-arrow-right"></i>
             </span>
-            <span className='w-60 max-sm:w-full flex items-center justify-between bg-[#121212] border-[#272727] border p-5 rounded-[8px] max-sm:items-center max-sm:justify-between'>
+            <span className='w-60 hover:bg-[#c9f31d] hover:text-black duration-200 cursor-pointer max-sm:w-full flex items-center justify-between bg-[#121212] border-[#272727] border p-5 rounded-[8px] max-sm:items-center max-sm:justify-between'>
                 <p>Twitter</p>
                 <i className="fa-solid fa-arrow-right"></i>
             </span>
