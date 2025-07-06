@@ -26,16 +26,18 @@ const App = () => {
     const mouseEnter = () =>{
       gsap.to(".sidebar1",{
         transform:"translateX(0%)",
-        duration:0.7,
+        duration:0.3,
         ease:"none",
+        display:"block"
       })
     }
 
     const mouseRemove = () =>{
       gsap.to(".sidebar1",{
         transform:"translateX(100%)",
-        duration:0.7,
+        duration:0.3,
         ease:"none",
+        display:"none"
       })
     }
     cursor.addEventListener('mousemove',moveHandler);
@@ -46,8 +48,8 @@ const App = () => {
   return (
     <div className="text-white bg-pink-200 maincontain cursor-default">
       <div className="cursor w-8 h-8 border-2 border-[#c9f31d] rounded-full absolute z-20"></div>
-      <div className="w-[300px] h-screen z-50 bg-black absolute right-0 top-0 text-white p-5 sidebar1">
-        <div className="w-full h-23 p-5 flex justify-end">
+      <div className="w-[300px] h-screen z-40 transform translate-x-[100%] backdrop-blur-lg bg-[#00000045] fixed right-0 top-0 text-white p-5 sidebar1" style={{display:"none"}}>
+        <div className="w-full h-23 p-5 flex active:opacity-60 justify-end">
           <i className="fa-solid fa-xmark cross text-black pt-3.5 pl-3.5 pr-3.5 cursor-pointer text-2xl flex justify-center items-center bg-[#c9f31d] rounded-[4px]"></i>
         </div>
         <div className="flex border-t-0 border-b-0 border-l-0 max-[1122px]:border-r-0 max-[1122px]:flex-1/2 border-gray-700 text-3xl">
@@ -72,24 +74,25 @@ const App = () => {
         </div>
         <ul className="flex gap-5 p-5 justify-center text-[28px]">
           <li>
-            <i className="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-facebook cursor-pointer hover:text-blue-400 transition-all"></i>
           </li>
           <li>
-            <i className="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-linkedin cursor-pointer hover:text-[#4784c2] transition-all"></i>
           </li>
           <li>
-            <i className="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-instagram cursor-pointer hover:text-pink-600 transition-all"></i>
           </li>
           <li>
-            <i className="fa-brands fa-x-twitter"></i>
+            <i className="fa-brands fa-x-twitter cursor-pointer hover:text-gray-300 transition-all"></i>
           </li>
           <li>
-            <i className="fa-brands fa-whatsapp"></i>
+            <i className="fa-brands fa-whatsapp cursor-pointer hover:text-green-600 transition-all"></i>
           </li>
         </ul>
-        <div className='flex items-center gap-3 pt-4.5 pb-4.5 pr-6 pl-6 text-black bg-[#c9f31d] rounded-[5px]'>
-          <p>Let's Talk</p>
+        <div className='flex items-center gap-3 pt-4.5 relative pb-4.5 cursor-pointer pr-6 group pl-6 text-black bg-[#c9f31d] rounded-[5px]'>
+          <p >Let's Talk</p>
           <i className="fa-solid fa-arrow-right"></i>
+          <div className="w-0 text-transparent h-full group-hover:w-full transition-all duration-400 cursor-pointer group-hover:text-black bg-green-400 absolute left-0 rounded-[5px] flex justify-center items-center"><p >Let's Talk</p></div>
         </div>
       </div>
       <Navbar />

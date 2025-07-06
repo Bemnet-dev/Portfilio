@@ -41,7 +41,6 @@ gsap.fromTo(".dreambox",
       trigger: ".workprocess",
       start: "top 30%",
       end:"top -10%",
-      markers: true,
       scrub:true,
       toggleActions: "restart none none none",
     }
@@ -58,7 +57,6 @@ gsap.fromTo(".dreamtext",
       trigger: ".workprocess",
       start: "top 30%",
       end:"top -10%",
-      markers: true,
       scrub:true,
       toggleActions: "restart none none none",
     }
@@ -68,7 +66,7 @@ gsap.fromTo(".dreamtext",
 
 },[])
   return (
-    <div className='w-screen h-screen max-sm:h-auto bg-[#151515] p-22 flex flex-col justify-around gap-10 max-sm:p-4 workprocess relative'>
+    <div className='w-screen h-screen max-sm:h-auto bg-[#151515] p-22 flex flex-col justify-around gap-10 max-sm:p-2 workprocess relative' id='service'>
       <h1 className='flex items-center gap-8 w-full justify-center'><span className='w-30 h-[1px] bg-[#c9f31d] flex rounded-[1px]'></span><p className='text-[#c9f31d] text-2xl' style={{fontFamily:"Caveat"}}>Working Process</p> <span className='w-30 h-[1px] bg-[#c9f31d] flex rounded-[1px]'></span></h1>
       <br />
       <h1 className='text-7xl text-center dreamtext'>Your Dream Website In Just Few Steps</h1>

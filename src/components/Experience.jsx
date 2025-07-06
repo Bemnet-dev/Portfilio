@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <div className='w-full pl-10 flex flex-col gap-4 max-sm:p-0'>
       <h1 className='text-4xl max-sm:text-2xl max-sm:w-full personaltitle'>Experience</h1>
-      <p className='text-[18px] max-sm:text-[16px] personaltitle'>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+      <p className='text-[18px] max-sm:text-[16px] personaltitle'>Completed an internship at Bluestock Fintech as a Software Development Engineer. Contributed to developing secure, scalable fintech applications, working on backend APIs and frontend integration.</p>
 
       <div className='detialTabs flex flex-wrap items-center w-full justify-between gap-6 p-5 border-t'>
         <p className='text-[18px] text-[#c9f31d]'>In 2025</p>

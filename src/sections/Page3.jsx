@@ -71,29 +71,36 @@ const Page3 = () => {
     const t1 = gsap.timeline({
       scrollTrigger:{
         trigger:".mainImages",
-        start:"top 50%",
+        start:"top 80%",
         end:"top -50%",
         scrub:1.2,
       }
     });
 
-    t1.fromTo(".projectheading",{
+    gsap.fromTo(".projectheading",{
       y:100,
       opacity:0,
     },{
       y:0,
       opacity:1,
+      scrollTrigger:{
+        trigger:".mainbody2",
+        start:"top 30%",
+        end:"-50%",
+        scrub:true,
+        toggleActions:"restart",
+      }
     })
 
     t1.fromTo(".image1",{
       x:"-100%"
-    },{x:"0%",stagger:1,duration:0.3});
+    },{x:"0%",stagger:1,duration:0.5});
 
     gsap.fromTo(".image2",{
       x:"100%"
-    },{x:"0%",stagger:1,duration:0.3,
+    },{x:"0%",stagger:1,duration:0.5,
       scrollTrigger:{
-        trigger:".mainImages",
+        trigger:".rightimages",
         start:"top 50%",
         end:"top -50%",
         scrub:1.2,
@@ -103,14 +110,14 @@ const Page3 = () => {
 
   return (
     <>
-      <div className='w-screen bg-[#151515] p-20 max-sm:p-5 mainbody2 relative'>
+      <div className='w-screen bg-[#151515] p-20 max-sm:p-5 mainbody2 relative' id='work'>
         <div className='w-10 h-10 border-2 border-white absolute rounded-full z-10 cursor2'>
 
         </div>
         <h1 className='flex items-center gap-8 w-full justify-center projectheading'><span className='w-30 h-[1px] bg-[#c9f31d] flex rounded-[1px]'></span><p className='text-[#c9f31d] text-2xl' style={{fontFamily:"Caveat"}}>Complete Projects</p> <span className='w-30 h-[1px] bg-[#c9f31d] flex rounded-[1px]'></span></h1>
         <br />
         <br />
-        <h1 className='text-6xl text-center max-sm:text-3xl'>Look at my portfolio and give me your feedback</h1>
+        <h1 className='text-6xl text-center max-sm:text-3xl'>Look at my Projects and give me your feedback</h1>
         <div className='w-full pt-10 flex justify-between max-sm:flex-col max-sm:items-center max-sm:gap-20 mainImages'>
           <div className='leftimages w-[48%] max-sm:w-[90%] flex flex-col gap-20 max-sm:text-[14px]'>
             {/* image1 */}
@@ -119,12 +126,14 @@ const Page3 = () => {
                 <img src={todo} className='hover:scale-[1.01] transition' alt="" />
               </div>
               <br />
-              <p className='text-[#c9f31d] max-sm:text-[14px]'>PRODUCT DESIGN</p>
+              <p className='text-[#c9f31d] max-sm:text-[14px]'>FULLSTACK PROJECT</p>
               <div className="mainline flex justify-between items-end">
-                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Brand Identity & Motion Design</h1>
-                <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
+                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Todo Calander App</h1>
+                <a href="https://github.com/SaisagarYT/TODO_FLUTTER_BACKEND">
+                  <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
                   <i className="fa-solid fa-arrow-up rotate-45 cursor-pointer"></i>
                 </div>
+                </a>
               </div>
             </ul>
             {/* image2 */}
@@ -133,29 +142,33 @@ const Page3 = () => {
                 <img src={ecommerce} className='hover:scale-[1.01] transition' alt="" />
               </div>
               <br />
-              <p className='text-[#c9f31d] max-sm:[16px]'>PRODUCT DESIGN</p>
+              <p className='text-[#c9f31d] max-sm:[16px]'>FULLSTACK PROJECT</p>
               <div className="mainline flex justify-between items-end">
-                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Brand Identity & Motion Design</h1>
-                <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
+                <h1 className='font-bold text-3xl max-sm:text-[20px]'>E-Commerce Website</h1>
+                <a href="https://github.com/SaisagarYT/E-commerce">
+                  <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
                   <i className="fa-solid fa-arrow-up rotate-45 cursor-pointer"></i>
                 </div>
+                </a>
               </div>
             </ul>
           </div>
           {/* right side images */}
-          <div className='rightimages w-[48%] flex flex-col gap-20 max-sm:w-[90%] max-sm:text-[14px]'>
+          <div className='rightimages relative w-[48%] flex flex-col gap-20 max-sm:w-[90%] max-sm:text-[14px]'>
             {/* image1 */}
             <ul className='image2'>
               <div className="conver rounded-[10px] overflow-hidden hover:rounded-[0px] transition duration-75">
                 <img src={netflix} className='hover:scale-[1.01] transition' alt="" />
               </div>
               <br />
-              <p className='text-[#c9f31d]'>PRODUCT DESIGN</p>
+              <p className='text-[#c9f31d]'>FRONTEND PROJECT</p>
               <div className="mainline flex justify-between items-end">
-                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Brand Identity & Motion Design</h1>
-                <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
+                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Netflix Website Clone</h1>
+                <a href="https://github.com/SaisagarYT/Netflix_Site_Clone">
+                  <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
                   <i className="fa-solid fa-arrow-up rotate-45 cursor-pointer"></i>
                 </div>
+                </a>
               </div>
             </ul>
             {/* image2 */}
@@ -164,12 +177,14 @@ const Page3 = () => {
                 <img src={landingpage} className='hover:scale-[1.01] transition' alt="" />
               </div>
               <br />
-              <p className='text-[#c9f31d]'>PRODUCT DESIGN</p>
+              <p className='text-[#c9f31d]'>FRONTEND PROJECT</p>
               <div className="mainline flex justify-between items-end">
-                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Brand Identity & Motion Design</h1>
-                <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
+                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Landingpage</h1>
+                <a href="https://github.com/SaisagarYT/Landingpage2">
+                  <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
                   <i className="fa-solid fa-arrow-up rotate-45 cursor-pointer"></i>
                 </div>
+                </a>
               </div>
             </ul>
             {/* image3 */}
@@ -178,12 +193,14 @@ const Page3 = () => {
                 <img src={googleplay} className='hover:scale-[1.01] transition' alt="" />
               </div>
               <br />
-              <p className='text-[#c9f31d]'>PRODUCT DESIGN</p>
+              <p className='text-[#c9f31d]'>FRONTEND PROJECT</p>
               <div className="mainline flex justify-between items-end">
-                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Brand Identity & Motion Design</h1>
-                <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
+                <h1 className='font-bold text-3xl max-sm:text-[20px]'>GooglePlay Books Clone</h1>
+                <a href="https://github.com/SaisagarYT/GoogleBooksClone">
+                  <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
                   <i className="fa-solid fa-arrow-up rotate-45 cursor-pointer"></i>
                 </div>
+                </a>
               </div>
             </ul>
           </div>

@@ -5,7 +5,7 @@ const Homepage = () => {
   return (
     <>
       <Preloader />
-      <div className="w-screen h-screen image flex justify-center items-center text-white homepage pt-[90px] z-10 relative">
+      <div className="w-screen h-screen image flex justify-center items-center text-white homepage pt-[90px] z-10 relative" id="home">
         <div className=" w-full h-full flex">
           <div className="w-[10%] h-full flex flex-col justify-around pt-20 pb-20 items-center">
             <div className="number text-black rotate-90 flex gap-3 items-center">
@@ -26,8 +26,8 @@ const Homepage = () => {
           {/* Remaining body */}
           <div className="w-[82%] h-full flex-col flex items-start justify-center max-sm:gap-10">
             <div className="w-[35%] max-sm:w-70 text-[20px] max-sm:text-[16px]">
-              <h1>
-                Currently Available For Freelance Worldwide{" "}
+              <h1 href="/top">
+                Currently Available For Freelance Internships{" "}
                 <i className="fa-solid fa-arrow-up rotate-45"></i>
               </h1>
               <span className="w-full h-[2px] flex bg-white mt-2"></span>
@@ -72,10 +72,10 @@ const Homepage = () => {
             </div>
 
             <ul className="flex flex-col gap-5">
-              <li>
-                <i className="fa-brands fa-facebook"></i>
+              <li className="hover:bg-blue-600">
+                <i className="fa-brands fa-facebook cursor-pointer"></i>
               </li>
-              <li>
+              <li className="hover:bg-blue-600">
                 <i className="fa-brands fa-linkedin"></i>
               </li>
               <li>

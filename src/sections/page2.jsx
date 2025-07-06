@@ -140,7 +140,7 @@ const page2 = () => {
 
   const [data,setData] = useState(1);
   return (
-    <div className="w-screen bg-[#171713] text-white details2">
+    <div className="w-screen bg-[#171713] text-white details2" id="about">
       <div className="text-scroll w-full h-24 bg-[#c9f31d] max-[1122px]:h-15 flex">
         <ul className="text-black flex w-full h-full text-5xl justify-between items-center gap-5 max-[1122px]:text-2xl scroller1 whitespace-nowrap" id="scroll1">
           <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
@@ -195,14 +195,13 @@ const page2 = () => {
       </div>
 
       <div className="w-full justify-center flex-col items-center flex p-5 max-[1122px]:pl-1 pr-1 animationbox1">
+        <a href="work"></a>
         <img src={leaf} className="w-12 starimage" alt="" />
         <h1 className="text-[40px] w-[90%] text-center max-[1122px]:text-2xl maintext1">
-          I'm David Matias, I'm a Brand & Webflow Designer, Currently residing
-          in the lush Victoria Street London, Matias operates globally and is
-          ready to take on any design challenge.
+          I'm Sagar, a student building projects in MERN stack / Fullstack development. Currently in BTech 3rd year at Parvathipuram in Manyam district, I’m learning by doing and ready to take on real-world challenges.
         </h1>
 
-        <div className="tabs p-10 max-sm:p-7  text-[18px] font-thin flex gap-5 max-[1122px]:flex-wrap items-center">
+        <div className="tabs p-10  text-[18px] font-thin flex gap-5 max-[1122px]:flex-wrap max-sm:p-2 justify-between items-center">
           <button className="pl-8 pr-8 rounded-[8px] pt-3 pb-3 bg-[#2d2d2d] cursor-pointer" style={data == 1? {backgroundColor:"#c9f31d",color:"black",fontWeight:"normal"}:{backgroundColor:"#2d2d2d"}} onClick={() => setData(1)}>
             ABOUT
           </button>
@@ -288,7 +287,7 @@ const page2 = () => {
         </ul>
       </div>
           <br />
-      <div className="text-scroll2 w-full h-24 bg-[#c9f31d] max-[1122px]:h-15 flex">
+      <div className="text-scroll2 w-full h-24 bg-[#c9f31d] max-[1122px]:h-15 flex" id="testimonial">
         <ul className="text-black flex w-full h-full text-5xl justify-between items-center gap-5 max-[1122px]:text-2xl scroller2 whitespace-nowrap">
           <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
             <i class="fa-brands fa-html5"></i>

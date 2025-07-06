@@ -10,6 +10,11 @@ html,body{
     height: auto;
 }
 
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 .image{
     background-image: url('./assets/background.jpg');
     background-position: center center;
@@ -28,7 +33,7 @@ html,body{
 }
 
 .scrollbar{
-    scrollbar-width: noned;
+    scrollbar-width:none;
     scroll-behavior: auto;
 }
 
