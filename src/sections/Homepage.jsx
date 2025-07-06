@@ -24,7 +24,7 @@ const Homepage = () => {
           </div>
 
           {/* Remaining body */}
-          <div className="w-[82%] h-full flex-col flex items-start justify-center max-sm:gap-10">
+          <div className="w-[82%] h-full flex-col flex items-start justify-center max-sm:gap-10 remainingbody">
             <div className="w-[35%] max-sm:w-70 text-[20px] max-sm:text-[16px]">
               <h1 href="/top">
                 Currently Available For Freelance Internships{" "}
@@ -50,10 +50,12 @@ const Homepage = () => {
                 alt=""
               />
               <div className="flex items-center gap-5 max-sm:items-center">
-                <div className="play w-20 max-sm:w-15 max-sm:h-15 h-20 rounded-full border-2 border-white flex justify-center absolute items-center animate-ping"></div>
-                <div className="subplay w-20 h-20 border-2 rounded-full flex items-center justify-center max-sm:w-15 max-sm:h-15">
-                  <i className="fa-solid fa-play text-white text-4xl"></i>
-                </div>
+                <div className="play pointer-events-none w-20 max-sm:w-15 max-sm:h-15 h-20 rounded-full border-2 border-white flex justify-center absolute items-center animate-ping"></div>
+                <a href="https://github.com/SaisagarYT/Portfilio">
+                  <div className="subplay w-20 h-20 border-2 rounded-full flex items-center justify-center max-sm:w-15 max-sm:h-15">
+                    <i className="fa-solid fa-play text-white text-4xl"></i>
+                  </div>
+                </a>
                 <p className="text-2xl max-sm:text-[16px]">
                   Work <br></br>process
                 </p>
