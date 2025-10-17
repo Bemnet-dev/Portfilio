@@ -9,9 +9,9 @@ const Homepage = () => {
         <div className=" w-full h-full flex">
           <div className="w-[10%] h-full flex flex-col justify-around pt-20 pb-20 items-center">
             <div className="number text-black rotate-90 flex gap-3 items-center">
-              <i class="fa-solid fa-phone text-gray-600"></i>
+              <img src="src\assets1\6a33272f-1c81-459f-8c79-660e385bc286.png" alt="" />
               <a href="/top">
-                <p className="text-white">+917842293493</p>
+                <p className="text-white">(+02)-574-328</p>
               </a>
             </div>
             <div className="scroll rotate-90 text-black flex items-center gap-5">
@@ -27,18 +27,19 @@ const Homepage = () => {
           <div className="w-[82%] h-full flex-col flex items-start justify-center max-sm:gap-10 remainingbody">
             <div className="w-[35%] max-sm:w-70 text-[20px] max-sm:text-[16px]">
               <h1 href="/top">
-                Currently Available For Freelance Internships{" "}
+                Currently available for freelance
+                worldwide{" "}
                 <i className="fa-solid fa-arrow-up rotate-45"></i>
               </h1>
               <span className="w-full h-[2px] flex bg-white mt-2"></span>
             </div>
 
             <div className="text-9xl font-bold">
-              <h1 className="max-sm:text-5xl">Full Stack</h1>
+              <h1 className="max-sm:text-5xl">Creative Visual</h1>
 
               <div className=" z-0">
                 <h1 className="text-transparent designer max-sm:text-5xl">
-                  Web Developer
+                  Designer
                 </h1>
               </div>
             </div>
@@ -51,7 +52,7 @@ const Homepage = () => {
               />
               <div className="flex items-center gap-5 max-sm:items-center">
                 <div className="play pointer-events-none w-20 max-sm:w-15 max-sm:h-15 h-20 rounded-full border-2 border-white flex justify-center absolute items-center animate-ping"></div>
-                <a href="https://github.com/SaisagarYT/Portfilio">
+                <a href="https://youtu.be/tgbNymZ7vqY">
                   <div className="subplay w-20 h-20 border-2 rounded-full flex items-center justify-center max-sm:w-15 max-sm:h-15">
                     <i className="fa-solid fa-play text-white text-4xl"></i>
                   </div>
@@ -64,6 +65,7 @@ const Homepage = () => {
           </div>
 
           {/* Right side */}
+          <img src="src/assets1/banner-man-62844818.png"/>
           <div className="w-[8%] h-full flex flex-col justify-center gap-40 pt-70 pb-20 items-center">
             <div className="scroll rotate-90 text-black flex items-center gap-5">
               <p className="text-white">SCROLLDOWN</p>

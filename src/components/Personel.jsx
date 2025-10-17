@@ -46,20 +46,22 @@ const Personel = () => {
   return (
     <div className='w-full pl-10 flex flex-col gap-4 max-sm:p-0'>
       <h1 className='text-4xl max-sm:text-2xl max-sm:w-full personaltitle'>Personal Info</h1>
-      <p className='text-[18px] max-sm:text-[16px] personaltitle'>Sagar, BTech 3rd year student in Manyam district, passionate about MERN stack projects, exploring fullstack development, eager for real-world challenges.</p>
+      <p className='text-[18px] max-sm:text-[16px] personaltitle'>
+        I'm David Matias, I'm a Brand & Webflow Designer, Currently residing in the lush Victoria Street London, Matias operates globally and is ready to take on any design challenge.
+      </p>
 
       <div className='detialTabs flex flex-wrap items-center justify-between gap-6'>
         <div className="w-[48%] max-sm:w-full rounded-[8px] flex flex-col justify-between h-30 p-4 bg-[#1f1f1f] boxscale1">
             <p className='text-[20px] max-sm:text-[18px] text-[#767676]'>Email</p>
-            <p className='text-[20px] max-sm:text-[16px]'>Sagameperso@gmail.com</p>
+            <p className='text-[20px] max-sm:text-[16px]'>Matias999@Gmail.Com</p>
         </div>
         <div className="w-[48%] max-sm:w-full rounded-[8px] flex flex-col justify-between h-30 p-4 bg-[#1f1f1f] boxscale1">
             <p className='text-[20px] max-sm:text-[18px] text-[#767676]'>Phone</p>
-            <p className='text-[20px] max-sm:text-[16px]'>+917842293493</p>
+            <p className='text-[20px] max-sm:text-[16px]'>+(2) 871 382 023</p>
         </div>
         <div className="w-[48%] max-sm:w-full rounded-[8px] flex flex-col justify-between h-30 p-4 bg-[#1f1f1f] boxscale2">
             <p className='text-[20px] max-sm:text-[18px] text-[#767676]'>Address</p>
-            <p className='text-[20px] max-sm:text-[16px]'>Parvathipuram</p>
+            <p className='text-[20px] max-sm:text-[16px]'>Victoria Street London,</p>
         </div>
         <div className="w-[48%] max-sm:w-full rounded-[8px] flex flex-col justify-between h-30 p-4 bg-[#1f1f1f] boxscale2">
             <p className='text-[20px] max-sm:text-[18px] text-[#767676]'>Follow</p>

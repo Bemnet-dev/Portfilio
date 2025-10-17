@@ -143,53 +143,24 @@ const page2 = () => {
     <div className="w-screen bg-[#171713] text-white details2" id="about">
       <div className="text-scroll w-full h-24 bg-[#c9f31d] max-[1122px]:h-15 flex">
         <ul className="text-black flex w-full h-full text-5xl justify-between items-center gap-5 max-[1122px]:text-2xl scroller1 whitespace-nowrap" id="scroll1">
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-html5"></i>
-            <p>HTML</p>
+
+          <li className="h-[80%] flex items-center">
+            <img src="src/assets1/ts3-32884f50.png" />
           </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-css3-alt"></i>
-            <p>CSS</p>
+          <li className="h-[80%] flex items-center">
+            <img src="src/assets1/ts1-2ad47110.png"  />
           </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-react"></i>
-            <p>REACT</p>
+          <li className="h-[80%] flex items-center">
+            <img src="src/assets1/93597c36-7d77-4bf4-9592-48949a79b817.png"  />
           </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-solid fa-leaf"></i>
-            <p>MONGODB</p>
+          <li className="h-[80%] flex items-center">
+            <img src="src/assets1/ts3-32884f50.png" />
           </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-js"></i>
-            <p>JAVASCRIPT</p>
+          <li className="h-[80%] flex items-center">
+            <img src="src/assets1/ts1-2ad47110.png"  />
           </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-flutter"></i>
-            <p>FLUTTER</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-html5"></i>
-            <p>HTML</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-css3-alt"></i>
-            <p>CSS</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-react"></i>
-            <p>REACT</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-solid fa-leaf"></i>
-            <p>MONGODB</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-js"></i>
-            <p>JAVASCRIPT</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-flutter"></i>
-            <p>FLUTTER</p>
+          <li className="h-[80%] flex items-center">
+          <img src="src/assets1/93597c36-7d77-4bf4-9592-48949a79b817.png"  />
           </li>
         </ul>
       </div>
@@ -198,9 +169,8 @@ const page2 = () => {
         <a href="work"></a>
         <img src={leaf} className="w-12 starimage" alt="" />
         <h1 className="text-[40px] w-[90%] text-center max-[1122px]:text-2xl maintext1">
-          I'm Sagar, a student building projects in MERN stack / Fullstack development. Currently in BTech 3rd year at Parvathipuram in Manyam district, I’m learning by doing and ready to take on real-world challenges.
+          I'm David Matias, I'm a Brand & Webflow Designer, Currently residing in the lush Victoria Street London, Matias operates globally and is ready to take on any design challenge.        
         </h1>
-
         <div className="tabs p-10  text-[18px] font-thin flex gap-5 max-[1122px]:flex-wrap max-sm:p-2 justify-between items-center">
           <button className="pl-8 pr-8 rounded-[8px] pt-3 pb-3 bg-[#2d2d2d] cursor-pointer" style={data == 1? {backgroundColor:"#c9f31d",color:"black",fontWeight:"normal"}:{backgroundColor:"#2d2d2d"}} onClick={() => setData(1)}>
             ABOUT
@@ -236,148 +206,58 @@ const page2 = () => {
 
       <div className="text-scroll w-full h-24 bg-[#c9f31d] max-[1122px]:h-15 flex">
         <ul className="text-black flex w-full h-full text-5xl justify-between items-center gap-5 max-[1122px]:text-2xl scroller1 whitespace-nowrap" id="scroll2">
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-html5"></i>
-            <p>HTML</p>
+                    <li className="h-[80%] flex items-center">
+            <img src="src/assets1/ts3-32884f50.png" />
           </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-css3-alt"></i>
-            <p>CSS</p>
+          <li className="h-[80%] flex items-center">
+            <img src="src/assets1/ts1-2ad47110.png"  />
           </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-react"></i>
-            <p>REACT</p>
+          <li className="h-[80%] flex items-center">
+            <img src="src/assets1/93597c36-7d77-4bf4-9592-48949a79b817.png"  />
           </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-solid fa-leaf"></i>
-            <p>MONGODB</p>
+          <li className="h-[80%] flex items-center">
+            <img src="src/assets1/ts3-32884f50.png" />
           </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-js"></i>
-            <p>JAVASCRIPT</p>
+          <li className="h-[80%] flex items-center">
+            <img src="src/assets1/ts1-2ad47110.png"  />
           </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-flutter"></i>
-            <p>FLUTTER</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-html5"></i>
-            <p>HTML</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-css3-alt"></i>
-            <p>CSS</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-react"></i>
-            <p>REACT</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-solid fa-leaf"></i>
-            <p>MONGODB</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-js"></i>
-            <p>JAVASCRIPT</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-flutter"></i>
-            <p>FLUTTER</p>
+          <li className="h-[80%] flex items-center">
+          <img src="src/assets1/93597c36-7d77-4bf4-9592-48949a79b817.png"  />
           </li>
         </ul>
       </div>
-          <br />
-      <div className="text-scroll2 w-full h-24 bg-[#c9f31d] max-[1122px]:h-15 flex" id="testimonial">
-        <ul className="text-black flex w-full h-full text-5xl justify-between items-center gap-5 max-[1122px]:text-2xl scroller2 whitespace-nowrap">
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-html5"></i>
-            <p>HTML</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-css3-alt"></i>
-            <p>CSS</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-react"></i>
-            <p>REACT</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-solid fa-leaf"></i>
-            <p>MONGODB</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-js"></i>
-            <p>JAVASCRIPT</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-flutter"></i>
-            <p>FLUTTER</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-html5"></i>
-            <p>HTML</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-css3-alt"></i>
-            <p>CSS</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-react"></i>
-            <p>REACT</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-solid fa-leaf"></i>
-            <p>MONGODB</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-js"></i>
-            <p>JAVASCRIPT</p>
-          </li>
-          <li className="h-[80%] border flex items-center pl-5 pr-5 rounded-[5px]">
-            <i class="fa-brands fa-flutter"></i>
-            <p>FLUTTER</p>
-          </li>
-        </ul>
-      </div>
-
+        
       <div className="w-full text-white bg-[#1d1d1d] max-sm:p-8 p-18 pb-30 list-none list flex-col flex gap-8 skillsets">
         <li className="w-full flex justify-between items-center">
-          <h1 className="text-4xl max-sm:text-2xl">My Certifications</h1>
-          <p className="text-[#c9f31d] max-sm:text-[14px]">View My Work</p>
+          <h1 className="text-4xl max-sm:text-2xl">Our Awards</h1>
+          <a href="#"className="text-[#c9f31d] max-sm:text-[14px]">View My Work</a>
         </li>
         <hr className="text-gray-600" />
         <div className="list w-full flex flex-col gap-8">
           <ul className="w-full flex justify-between max-sm:text-[14px] text-[20px]">
-            <li>Bluestock Fintech</li>
-            <li>SDE Intern</li>
-            <li>2025</li>
-          </ul>
-          <hr className="text-gray-600" />
-          <ul className="w-full flex justify-between max-sm:text-[14px] text-[20px]">
-            <li>Coursera</li>
-            <li>Version Control</li>
-            <li>2024</li>
-          </ul>
-          <hr className="text-gray-600" />
-          <ul className="w-full flex justify-between max-sm:text-[14px] text-[20px]">
-            <li>Coursera/IBM</li>
-            <li>Python for Data Science, AI & Development</li>
-            <li>2024</li>
-          </ul>
-          <hr className="text-gray-600" />
-          <ul className="w-full flex justify-between max-sm:text-[14px] text-[20px]">
-            <li>Linkedin Learning</li>
-            <li>
-              Learning Full-Stack JavaScript Development: MongoDB, Node, and
-              React
-            </li>
+            <li>Site Of The Day</li>
+            <li>Css & Animation</li>
             <li>2018</li>
           </ul>
           <hr className="text-gray-600" />
           <ul className="w-full flex justify-between max-sm:text-[14px] text-[20px]">
-            <li>Simplilearn</li>
-            <li>Introduction to Flutter Course</li>
-            <li>2025</li>
+            <li>Best Business Model</li>
+            <li>New Strategy</li>
+            <li>2019</li>
+          </ul>
+          <hr className="text-gray-600" />
+          <ul className="w-full flex justify-between max-sm:text-[14px] text-[20px]">
+            <li>Motion Graphic</li>
+            <li>3D & Visual Effect</li>
+            <li>2020</li>
+          </ul>
+          <hr className="text-gray-600" />
+          <ul className="w-full flex justify-between max-sm:text-[14px] text-[20px]">
+            <li>Video Design</li>
+            <li>
+              Css & Animation
+            </li>
+            <li>2022</li>
           </ul>
         </div>
       </div>

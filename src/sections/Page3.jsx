@@ -1,9 +1,4 @@
 // import React, { useEffect } from 'react'
-import netflix from '../assets/image.png';
-import todo from '../assets/Cream Modern Corporate Download Our App Minimal Instagram Story.png';
-import landingpage from '../assets/Screenshot (298).png';
-import googleplay from '../assets/Black Modern New Collection Instagram Post.png';
-import ecommerce from '../assets/Screenshot (301).png';
 import { useEffect } from 'react';
 import gsap from 'gsap';
 
@@ -111,25 +106,30 @@ const Page3 = () => {
   return (
     <>
       <div className='w-screen bg-[#151515] p-20 max-sm:p-5 mainbody2 relative' id='work'>
-        <div className='w-10 h-10 border-2 border-white absolute rounded-full z-10 cursor2'>
-
-        </div>
-        <h1 className='flex items-center gap-8 w-full justify-center projectheading'><span className='w-30 h-[1px] bg-[#c9f31d] flex rounded-[1px]'></span><p className='text-[#c9f31d] text-2xl' style={{fontFamily:"Caveat"}}>Complete Projects</p> <span className='w-30 h-[1px] bg-[#c9f31d] flex rounded-[1px]'></span></h1>
-        <br />
-        <br />
-        <h1 className='text-6xl text-center max-sm:text-3xl'>Look at my Projects and give me your feedback</h1>
+                  <h1 className='flex items-center gap-5 justify-center w-full max-sm:pb-8 max-sm:pt-5'>
+                    <span className='w-30 h-[1px] bg-[#c9f31d] flex rounded-[1px]'></span>
+                    <p className='text-[#c9f31d] text-2xl max-sm:text-[16px]' style={{fontFamily:"Caveat"}}>
+                      Complete Project
+                      </p>
+                      <span className='w-30 h-[1px] bg-[#c9f31d] flex rounded-[1px]'></span>
+                    </h1>
+                    <br />
+                    <br />
+        <h1 className='text-6xl text-center max-sm:text-3xl'>Look at my Projects and give me
+          <br />
+           Your feedback</h1>
         <div className='w-full pt-10 flex justify-between max-sm:flex-col max-sm:items-center max-sm:gap-20 mainImages'>
           <div className='leftimages w-[48%] max-sm:w-[90%] flex flex-col gap-20 max-sm:text-[14px]'>
             {/* image1 */}
             <ul className='image1'>
               <div className="conver rounded-[10px] overflow-hidden hover:rounded-[0px] transition duration-75">
-                <img src={todo} className='hover:scale-[1.01] transition' alt="" />
+                <img src="src/assets1/pro1-4e06b6ed.png" className='hover:scale-[1.01] transition' alt="" />
               </div>
               <br />
-              <p className='text-[#c9f31d] max-sm:text-[14px]'>FULLSTACK PROJECT</p>
+              <p className='text-[#c9f31d] max-sm:text-[14px]'>Product Design</p>
               <div className="mainline flex justify-between items-end">
-                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Todo Calander App</h1>
-                <a href="https://github.com/SaisagarYT/TODO_FLUTTER_BACKEND">
+                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Brand Identity & Motion Design</h1>
+                <a href="#">
                   <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
                   <i className="fa-solid fa-arrow-up rotate-45 cursor-pointer"></i>
                 </div>
@@ -139,13 +139,28 @@ const Page3 = () => {
             {/* image2 */}
             <ul className='image1'>
               <div className="conver rounded-[10px] overflow-hidden hover:rounded-[0px] transition duration-75">
-                <img src={ecommerce} className='hover:scale-[1.01] transition' alt="" />
+                <img src="src/assets1/pro3-454e8e4f.png" className='hover:scale-[1.01] transition' alt="" />
               </div>
               <br />
-              <p className='text-[#c9f31d] max-sm:[16px]'>FULLSTACK PROJECT</p>
+              <p className='text-[#c9f31d] max-sm:[16px]'>Product Design</p>
               <div className="mainline flex justify-between items-end">
-                <h1 className='font-bold text-3xl max-sm:text-[20px]'>E-Commerce Website</h1>
-                <a href="https://github.com/SaisagarYT/E-commerce">
+                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Design & Branding Mokeup</h1>
+                <a href="#">
+                  <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
+                  <i className="fa-solid fa-arrow-up rotate-45 cursor-pointer"></i>
+                </div>
+                </a>
+              </div>
+            </ul>
+            <ul className='image1'>
+              <div className="conver rounded-[10px] overflow-hidden hover:rounded-[0px] transition duration-75">
+                <img src="src/assets1/pro5-66e59ab7.png" className='hover:scale-[1.01] transition' alt="" />
+              </div>
+              <br />
+              <p className='text-[#c9f31d] max-sm:[16px]'>UI/UX Design</p>
+              <div className="mainline flex justify-between items-end">
+                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Mobile Application Development</h1>
+                <a href="#">
                   <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
                   <i className="fa-solid fa-arrow-up rotate-45 cursor-pointer"></i>
                 </div>
@@ -158,13 +173,13 @@ const Page3 = () => {
             {/* image1 */}
             <ul className='image2'>
               <div className="conver rounded-[10px] overflow-hidden hover:rounded-[0px] transition duration-75">
-                <img src={netflix} className='hover:scale-[1.01] transition' alt="" />
+                <img src="src/assets1/pro2-f70978ea.png" className='hover:scale-[1.01] transition' alt="" />
               </div>
               <br />
-              <p className='text-[#c9f31d]'>FRONTEND PROJECT</p>
+              <p className='text-[#c9f31d]'>UI/UX Design</p>
               <div className="mainline flex justify-between items-end">
-                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Netflix Website Clone</h1>
-                <a href="https://github.com/SaisagarYT/Netflix_Site_Clone">
+                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Mobile Application Development</h1>
+                <a href="#">
                   <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
                   <i className="fa-solid fa-arrow-up rotate-45 cursor-pointer"></i>
                 </div>
@@ -174,35 +189,37 @@ const Page3 = () => {
             {/* image2 */}
             <ul className='image2'>
               <div className="conver rounded-[10px] overflow-hidden hover:rounded-[0px] transition duration-75">
-                <img src={landingpage} className='hover:scale-[1.01] transition' alt="" />
+                <img src="src/assets1/pro4-d98308c3.png" className='hover:scale-[1.01] transition' alt="" />
               </div>
               <br />
-              <p className='text-[#c9f31d]'>FRONTEND PROJECT</p>
+              <p className='text-[#c9f31d]'>UI/UX Design</p>
               <div className="mainline flex justify-between items-end">
-                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Landingpage</h1>
-                <a href="https://github.com/SaisagarYT/Landingpage2">
+                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Mobile Application Development</h1>
+                <a href="#">
                   <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
                   <i className="fa-solid fa-arrow-up rotate-45 cursor-pointer"></i>
                 </div>
                 </a>
               </div>
             </ul>
+            
             {/* image3 */}
             <ul className='image2'>
               <div className="conver rounded-[10px] overflow-hidden hover:rounded-[0px] transition duration-75">
-                <img src={googleplay} className='hover:scale-[1.01] transition' alt="" />
+                <img src="src/assets1/pro6-f38a046d.png" className='hover:scale-[1.01] transition' alt="" />
               </div>
               <br />
-              <p className='text-[#c9f31d]'>FRONTEND PROJECT</p>
+              <p className='text-[#c9f31d]'>UI/UX Design</p>
               <div className="mainline flex justify-between items-end">
-                <h1 className='font-bold text-3xl max-sm:text-[20px]'>GooglePlay Books Clone</h1>
-                <a href="https://github.com/SaisagarYT/GoogleBooksClone">
+                <h1 className='font-bold text-3xl max-sm:text-[20px]'>Mobile Application Development</h1>
+                <a href="#">
                   <div className='w-12 h-12 bg-[#242424] hover:bg-[#c9f31d] flex items-center justify-center text-white hover:text-black transition rounded-[3px]'>
                   <i className="fa-solid fa-arrow-up rotate-45 cursor-pointer"></i>
                 </div>
                 </a>
               </div>
             </ul>
+            
           </div>
         </div>
         <div className='w-full h-60 flex justify-center items-center mt-20'>
@@ -226,7 +243,7 @@ const Page3 = () => {
             </span>
             <div className="w-full flex flex-col justify-between">
               <p className='text-2xl text-[#858585] max-sm:text-[18px]'>Email</p>
-              <p className='text-white max-sm:text-[14px]'>Sagameperso@gmail.com</p>
+              <p className='text-white max-sm:text-[14px]'>Davidmatias333@gmail.com</p>
             </div>
           </div>
           <div className='w-full flex text-black hover:border-[#c9f31d] transition max-sm:pt-4 max-sm:pb-4 duration-1000 pt-7 gap-5 pb-7 border-b border-gray-600'>
@@ -235,12 +252,12 @@ const Page3 = () => {
             </span>
             <div className="w-full flex flex-col justify-between">
               <p className='text-2xl text-[#858585] max-sm:text-[18px]'>Location</p>
-              <p className='text-white max-sm:text-[14px]'>Vizianagaram</p>
+              <p className='text-white max-sm:text-[14px]'>Victoria Street London, England</p>
             </div>
           </div>
         </div>
         <div className='rightside w-[40%] max-sm:w-[100%] bg-[#212121] p-15'>
-          <img src="https://matias-react-js.netlify.app/assets/project-need-dee85a1f.png" alt="" />
+          <img src="src/assets1/project-need-dee85a1f.png" alt="" />
         </div>
       </div>
     </>

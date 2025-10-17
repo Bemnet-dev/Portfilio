@@ -1,84 +1,121 @@
-import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from 'gsap/all';
+import React, { useEffect } from 'react'
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger);
 
 const Page5 = () => {
+  // const t1 = gsap.timeline({
+  //   scrollTrigger:{
+  //     markers:true,
+  //     trigger:".workprocess",
+  //     start:"top 30%",
+  //     scrub:true,
+  //   }
+  // })
+  useEffect(() =>{
+    const mainbox = document.querySelectorAll('.dreambox');
+    mainbox.forEach((box) => 
+    {
+      const blackbox = box.querySelector('.blackbox');
+      box.addEventListener('mouseenter',() =>{
+      gsap.to(blackbox,{
+        backgroundColor:"#c9f31d",
+      })
 
-  const backTop = () =>{
-    const top = document.querySelector('.backtop');
-    top.addEventListener('click',() =>{
-      window.scrollTo({
-        top:0,
-        behavior:"smooth",
+      box.addEventListener('mouseleave',() =>{
+        gsap.to(blackbox,{
+          backgroundColor:"#090909",
+        })
       })
     })
+  })
+
+gsap.fromTo(".dreambox", 
+  { y: 200, opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 0.9,
+    ease:"none",
+    scrollTrigger: {
+      trigger: ".workprocess",
+      start: "top 30%",
+      end:"top -10%",
+      scrub:true,
+      toggleActions: "restart none none none",
+    }
   }
+);
+gsap.fromTo(".dreamtext", 
+  { y: 200, opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 0.9,
+    ease:"none",
+    scrollTrigger: {
+      trigger: ".workprocess",
+      start: "top 30%",
+      end:"top -10%",
+      scrub:true,
+      toggleActions: "restart none none none",
+    }
+  }
+);
 
-  useGSAP(() =>{
-    const t1 = gsap.timeline({
-      scrollTrigger:{
-        trigger:".scrollbtn",
-        start:"top 20%",
-        end:"end -50%",
-        scrub:true,
-        toggleActions:"restart",
-      }
-    })
 
-    t1.fromTo('btn',{y:100,opacity:0},{
-      opacity:1,
-      y:0,
-      duration:1,
-    })
-  },[])
+},[])
   return (
-    <div className='w-screen h-screen max-sm:h-auto bg-[#111111] flex justify-between flex-col' id='contact'>
-      <div className='pl-20 pr-20 max-sm:p-5'>
-          <h1 className='text-[140px] text-center border max-sm:text-8xl rounded-[5px]'>GET IN TOUCH</h1>
-      </div>
-      <div className='w-full flex items-center max-sm:flex-col'>
-        <div className="w-[50%] h-50 flex flex-col justify-between max-sm:w-full pr-30 pl-20 max-sm:p-5">
-            <h1 className='text-2xl max-sm:text-[20px]'>Hello, I’m Sagar Sailada, Website & User Interface Designer and Developer based in Parvathipuram.</h1>
-            <h1 className='text-3xl underline max-sm:text-2xl'>Sagameperso@gmail.com</h1>
+    <>
+    <div className='w-screen h-screen max-sm:h-auto bg-[#151515] p-22 flex flex-col justify-around gap-10 max-sm:p-2 workprocess relative' id='service'>
+      <h1 className='flex items-center gap-8 w-full justify-center'>
+        <span className='w-30 h-[1px] bg-[#c9f31d] flex rounded-[1px]'></span>
+        <p className='text-[#c9f31d] text-2xl' style={{fontFamily:"Caveat"}}>
+          Working Process
+        </p> 
+          <span className='w-30 h-[1px] bg-[#c9f31d] flex rounded-[1px]'></span></h1>
+          <h1 className='text-7xl text-center dreamtext'>Your Dream Website In Just Few 
+          <br/>Steps
+      </h1>
+        <div className='w-full flex justify-between max-sm:flex-col max-sm:gap-6'>
+          <div className='w-100 p-6 border border-[#6b6b6b] max-sm:w-[100%] max-sm:text-[16px] translate-y-[100px] opacity-0 flex dreambox flex-col gap-5 rounded-[10px] transition-all duration-300 overflow-hidden hover:border-[#c9f31d] relative'>
+            <div className='w-15 h-15 rounded-full absolute bottom-[-15px] blackbox bg-[#090909] right-[-15px]'>
+            </div>
+            <h1 className='text-4xl font-bold max-sm:text-2xl'>Concept</h1>
+            <p>Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
+            <ul className='list-none flex flex-col gap-1 text-[14px]'>
+                <li className='flex items-center gap-2'><i className="fa-solid fa-circle text-[#c9f31d] text-[8px]"></i>Reviewing any existing branding</li>
+                <li className='flex items-center gap-2'><i className="fa-solid fa-circle text-[#c9f31d] text-[8px]"></i>Target audience and competitors research</li>
+                <li className='flex items-center gap-2'><i className="fa-solid fa-circle text-[#c9f31d] text-[8px]"></i>Developing a strategy</li>
+            </ul>
         </div>
-        <div className="w-[50%] pl-20 flex  flex-wrap relative scrollbtn gap-14 items-center justify-between max-sm:flex-col max-sm:p-5 max-sm:w-full pr-20">
-          <a href="sagameperso@gmail.com" className='max-sm:w-full'>
-            <span className='w-60 hover:bg-[#c9f31d] btn hover:text-black duration-200 cursor-pointer max-sm:w-full flex items-center justify-between bg-[#121212] border-[#272727] border p-5 rounded-[8px] max-sm:items-center max-sm:justify-between'>
-                <p>Gmail</p>
-                <i className="fa-solid fa-arrow-right"></i>
-            </span>
-          </a>
-            <a href="https://www.instagram.com/____sagar_sylada____/" className='max-sm:w-full'>
-              <span className='w-60 hover:bg-[#c9f31d] btn hover:text-black duration-200 cursor-pointer max-sm:w-full flex items-center justify-between bg-[#121212] p-5 border-[#272727] border rounded-[8px] max-sm:items-center max-sm:justify-between'>
-                  <p>Instagram</p>
-                  <i className="fa-solid fa-arrow-right"></i>
-              </span>
-            </a>
-            <a href='https://www.linkedin.com/in/sai-sagar-a1a96a256/' className='max-sm:w-full'>
-              <span className='w-60 hover:bg-[#c9f31d] btn hover:text-black duration-200 cursor-pointer max-sm:w-full flex items-center justify-between bg-[#121212] border border-[#272727] p-5 rounded-[8px] max-sm:items-center max-sm:justify-between'>
-                  <p>Linkedin</p>
-                  <i className="fa-solid fa-arrow-right"></i>
-              </span>
-            </a>
-            <a href="https://x.com/Sagar_Sylada" className='max-sm:w-full'>
-              <span className='w-60 hover:bg-[#c9f31d] btn hover:text-black duration-200 cursor-pointer max-sm:w-full flex items-center justify-between bg-[#121212] border-[#272727] border p-5 rounded-[8px] max-sm:items-center max-sm:justify-between'>
-                  <p>Twitter</p>
-                  <i className="fa-solid fa-arrow-right"></i>
-              </span>
-            </a>
+          <div className='w-100 p-6 border border-[#6b6b6b] flex flex-col gap-5 dreambox translate-y-[100px] opacity-0 rounded-[10px] max-sm:w-[100%] transition-all duration-300 relative overflow-hidden hover:border-[#c9f31d]'>
+            <div className='w-15 h-15 rounded-full absolute bottom-[-15px] blackbox bg-[#090909] right-[-15px]'>
+            </div>
+            <h1 className='text-4xl font-bold max-sm:text-2xl'>Design</h1>
+            <p>Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
+            <ul className='list-none flex flex-col gap-1 text-[14px]'>
+                <li className='flex items-center gap-2'><i className="fa-solid fa-circle text-[#c9f31d] text-[8px]"></i>Developing wireframes and mockup</li>
+                <li className='flex items-center gap-2'><i className="fa-solid fa-circle text-[#c9f31d] text-[8px]"></i>Choosing typography, color palettes,</li>
+                <li className='flex items-center gap-2'><i className="fa-solid fa-circle text-[#c9f31d] text-[8px]"></i>Refining the design</li>
+            </ul>
         </div>
-      </div>
-      <div className="w-full h-30 bg-[#1f1f1f] flex justify-between items-center max-sm:h-auto max-sm:p-5 max-sm:gap-6 pl-25 pr-25">
-        <p className='text-[14px] max-sm:text-[11px]'>Copyright © 2025 Sagar. All rights reserved.</p>
-        <div className='flex gap-5 text-[14px] max-sm:flex-col max-sm:text-[11px] max-sm:gap-0'>
-            <p>Terms&Conditions</p>
-            <p>Privacy Policy</p>
+          <div className='w-100 p-6 border border-[#6b6b6b] flex flex-col max-sm:w-[100%] translate-y-[100px] opacity-0 dreambox gap-5 rounded-[10px] transition-all duration-300 relative overflow-hidden hover:border-[#c9f31d]'>
+            <div className='w-15 h-15 rounded-full absolute bottom-[-15px] bg-[#090909] blackbox right-[-15px]'>
+
+            </div>
+            <h1 className='text-4xl font-bold max-sm:text-2xl'>Development</h1>
+            <p>Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
+            <ul className='list-none flex flex-col gap-1 text-[14px]'>
+                <li className='flex items-center gap-2'><i className="fa-solid fa-circle text-[#c9f31d] text-[8px]"></i>Testing the website thoroughly launch</li>
+                <li className='flex items-center gap-2'><i className="fa-solid fa-circle text-[#c9f31d] text-[8px]"></i>Choosing typography, color palettes,</li>
+                <li className='flex items-center gap-2'><i className="fa-solid fa-circle text-[#c9f31d] text-[8px]"></i>Refining the design</li>
+            </ul>
         </div>
-        <span className='bg-[#c9f31d] cursor-pointer p-5 rounded-[5px] backtop text-black' onClick={backTop}>
-          <i className="fa-solid fa-arrow-up"></i>
-        </span>
       </div>
     </div>
+    
+    </>
   )
 }
 

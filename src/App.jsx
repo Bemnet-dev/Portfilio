@@ -7,6 +7,7 @@ import Page2 from "./sections/page2";
 import Page3 from "./sections/Page3";
 import Page4 from "./sections/Page4";
 import Page5 from "./sections/Page5";
+import Page6 from "./sections/pasge6";
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
@@ -53,24 +54,23 @@ const App = () => {
           <i className="fa-solid fa-xmark cross text-black pt-3.5 pl-3.5 pr-3.5 cursor-pointer text-2xl flex justify-center items-center bg-[#c9f31d] rounded-[4px]"></i>
         </div>
         <div className="flex border-t-0 border-b-0 border-l-0 max-[1122px]:border-r-0 max-[1122px]:flex-1/2 border-gray-700 text-3xl">
-          <i className="fa-solid fa-shield-halved text-[#c9f31d]"></i>
-          <h1>saisagar</h1>
+          <img src="src\assets1\0459d443-21fd-4d1e-a8e7-a367df2133c1.png" alt="" className='flex justify-between gap-10 h-[60%]' />
         </div>
         <p className="text-white text-[14px]">
-          I am a passionate and detail-oriented Full-Stack Web Developer with
-          experience building responsive, user-friendly web applications.
-          Skilled in technologies such as React, Node.js, MongoDB, and
-          JavaScript, I excel at creating clean, maintainable code and intuitive
-          user experiences. I am committed to continuous learning and love
-          solving complex challenges as part of a collaborative team.
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, 
+          aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam,
+           nisi ut aliquid ex ea autem velit esse quam nihil
         </p>
         <br />
         <div>
           <h1 className="text-[#797979]">Address</h1>
-          <h1 className="text-[15px]">Kusumaguddi Street,Parvathipuram</h1>
+          <h1 className="text-[15px]">Victoria Street London,</h1>
           <br />
           <h1>Email</h1>
-          <h1 className="text-[15px]">sagameperso@gmail.com</h1>
+          <h1 className="text-[15px]">matias999@.com</h1>
+          <br/>
+          <h1 className="text-[#797979]">Call now</h1>
+          <h1 className="text-[15px]">+98 4758 2154 021</h1>
         </div>
         <ul className="flex gap-5 p-5 justify-center text-[28px]">
           <li>
@@ -101,6 +101,7 @@ const App = () => {
       <Page3 />
       <Page4 />
       <Page5 />
+      <Page6 />
     </div>
   );
 };

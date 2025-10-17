@@ -43,15 +43,15 @@ const Navbar = () => {
   return (
     <div className='w-full h-[90px] opacity-100 fixed bg-[rgb(0,0,0,0.2)] flex items-center justify-between z-30 border-b border-gray-700 navbar'>
       <div className='flex border-t-0 border-b-0 border-l-0 max-[1122px]:border-r-0 max-[1122px]:flex-1/2 border-gray-700 border h-full items-center p-3.5 text-3xl'>
-        <i className="fa-solid fa-shield-halved text-[#c9f31d]"></i>
-        <h1>saisagar</h1>
+        <img src="src\assets1\0459d443-21fd-4d1e-a8e7-a367df2133c1.png" alt="" className='flex justify-between gap-10 h-[60%]' />
       </div>
       <ul className='flex justify-between gap-10 h-[60%] items-center max-[1122px]:hidden navtabs'>
         <a href="#home"><li className=' cursor-pointer'>HOME</li></a>
         <a href="#about"><li className=' cursor-pointer'>ABOUT</li></a>
-        <a href="#testimonial"><li className=' cursor-pointer'>TESTIMONIAL</li></a>
         <a href="#work"><li className=' cursor-pointer'>WORK</li></a>
         <a href="#service"><li className=' cursor-pointer'>SERVICE</li></a>
+        <a href="#testimonial"><li className=' cursor-pointer'>TESTIMONIAL</li></a>
+        <a href="#blog"><li className=' cursor-pointer'>BLOG</li></a>
         <a href="#contact"><li className=' cursor-pointer'>CONTACT</li></a>
       </ul>
       <div className='flex justify-end gap-4 border h-full border-t-0 border-r-0 max-[1122px]:border-l-0 max-[1122px]:flex-1/2 border-gray-700 p-4 pl-6 '>
